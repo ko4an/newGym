@@ -1,9 +1,8 @@
 /* Slider */
 .slick-slider
 {
-    border:0.3vw #7fcd5190 solid;
+    border:0.3vw #7eab64 solid;
     float:left;
-    margin-top: 4vw;
     display: block;
     box-sizing: border-box;
     width: 100vw;

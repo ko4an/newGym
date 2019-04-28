@@ -1,38 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./style/style.css">
-	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<header>
-		<div class="logo"></div>
-		<div class="head_title">Фитнес-клуб<br>NAME</div>
-		<nav>
-			<div style="background-color:#7eab64 ; color: #f7faf5;">Главная</div>
-            <div>Зоны</div>
-			<div>Заявка</div>
-		</nav>
-	</header>
-	<div class="main_slider">
+<!-- main -->
+<div id='main'>
+<!-- slider -->
+<div class="main_slider">
     	<div class="slide" style="background-image: url(./img/second.jpg);">
     		<div class="main_usl">
                 <div class="main_usl_title">У нас вы найдете</div>
-    			<div class="usl">
+    			<div class="usl" v-on:click="usl = 'gr'">
                     <div class="usl_tag">Групповые занятия</div>
     				<div class="usl_logo"><div class="fa fa-users"></div></div>
     				<div class="usl_info">Уникальные программы, направленные на улучшение физического состояния</div>
     			</div>
-    			<div class="usl">
+    			<div class="usl" v-on:click="usl = 'tr'">
     				<div class="usl_tag">Тренажерный зал</div>
                     <div class="usl_logo"><div class="fa fa-bolt"></div></div>
     				<div class="usl_info">Силовая зона, кардио зона, большой выбор тренажёров.</div>
     			</div>
-    			<div class="usl">
+    			<div class="usl" v-on:click="usl = 'pr'">
                     <div class="usl_tag">Персональный тренинг</div>
     				<div class="usl_logo"><div class="fa fa-user"></div></div>
     				<div class="usl_info">Индивидуальная программа, разработанная специально для вас</div>
@@ -65,28 +48,11 @@
             </div>
         </div>
   	</div>
-    <footer>
-        <div class="logo" style="background-image: url(./img/dumfooter.png);"></div>
-        <div class="contact">
-            <div class="address">г.Шумерля ул.---- д.-
-                <div class="icon" style="background-image: url(./img/address.png);"></div>
-            </div>
-            <div class="telephone">+7(987)654-32-10
-                <div class="icon" style="background-image: url(./img/tele.png);"></div>
-            </div>
-        </div>
-        <div class="soc">
-            <div class="soc_title">Мы в соц. сетях</div>
-            <div class="ico" style="background-image: url(./img/001.png);"></div>
-            <div class="ico" style="background-image: url(./img/002.png);"></div>
-            <div class="ico" style="background-image: url(./img/003.png);"></div>
-            <div class="ico" style="background-image: url(./img/005.png);"></div>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.0.js"integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="crossorigin="anonymous"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="./js/script.js"></script>
-  </body>
-</html>
-</body>
-</html>
+<!-- slider end -->
+<!-- zone -->
+    <div class="zone_gr" v-if="usl == 'gr'"></div>
+    <div class="zone_gr" v-if="usl == 'tr'"></div>
+    <div class="zone_gr" v-if="usl == 'pr'"></div>
+<!-- zone end -->
+</div>
+<!-- main end -->

@@ -10,3 +10,10 @@ $(document).ready(function(){
   		cssEase: 'linear'
       });
     });
+
+var demo = new Vue({
+  el: '#main',
+  data: {
+    usl: ''
+  }
+})

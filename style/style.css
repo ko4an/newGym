@@ -8,8 +8,7 @@ header{
   height: 3vw;
   background-color: #7eab6410;
   padding: 0.5vw;
-  position: absolute;
-  top: 0px;
+  float: left;
 }
 .logo{
   background-image: url(../img/dumbell.png);
@@ -94,7 +93,10 @@ nav div{
   background-color: #00000060;
   margin-top: 1vw;
   padding-top: 0.5vw;
-  cursor: pointer;
+}
+.usl:hover{
+  box-shadow: 0 0 2vw #000000;
+  transition: 0.5s;
 }
 .usl_logo{
 	padding: 0.5vw;
@@ -211,4 +213,12 @@ footer{
 	background-repeat: no-repeat;
 	height: 1vw;
 	margin-left: 0.65vw;
+}
+.zone_gr{
+  width: 100vw;
+  height: 40vw;
+  background-image: url(../img/gr_background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
 }
