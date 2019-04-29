@@ -214,11 +214,74 @@ footer{
 	height: 1vw;
 	margin-left: 0.65vw;
 }
-.zone_gr{
+.form_main{
   width: 100vw;
-  height: 40vw;
-  background-image: url(../img/gr_background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  text-align: center;
+  height: 10vw;
   float: left;
+  padding-top: 2vw;
+  background-image: -webkit-linear-gradient(left, #7eab64, #7eab6410, #7eab64);
+  background-image: -moz-linear-gradient(left, #7eab64, #7eab6410, #7eab64);
+  background-image: -ms-linear-gradient(left, #7eab64, #7eab6410, #7eab64);
+  background-image: -o-linear-gradient(left, #7eab64, #7eab6410, #7eab64);
+}
+.form_title{
+  font-size: 1.3vw;
+  font-family: sans-serif;
+  color: #7eab64;
+  font-weight: 700;
+}
+.form_button{
+  margin-top: 2vw;
+  border: 0;
+  text-align: center;
+  color: white;
+  position: relative;
+  font-weight: 900;
+  font-size: 1vw;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #7eab64;
+  transition: all .5s linear;
+  width: 10vw;
+  cursor: pointer;
+  clear: both;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.form_button:hover{
+  color: #7eab64;
+  background-color: #00000000;
+}
+
+.form_button:before, .form_button:after{
+  content: '';
+  background: #7eab64;
+  position: absolute;
+  width: 0;
+  height: 0.125vw;
+  transition: all .5s linear;
+}
+
+.form_button:before{
+  top: 0;
+  left: 0;
+}
+
+.form_button:after{
+  top: 100%;
+  right: 0;
+}
+
+.form_button:hover:before, .form_button:hover:after{
+  width: 100%;
+}
+.form {
+  width: 33vw;
+  height: 20vw;
+  position: fixed;
+  left: 33vw;
+  top:15vw;
+  background-color: #00000090;
 }

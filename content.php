@@ -54,5 +54,24 @@
     <div class="zone_gr" v-if="usl == 'tr'"></div>
     <div class="zone_gr" v-if="usl == 'pr'"></div>
 <!-- zone end -->
+<!-- form -->
+    <div class="form_main">
+        <div class="form_title">ЗАПИСАТЬСЯ СЕЙЧАС</div>
+        <div class="form_button" v-on:click="form = true">Записаться</div>
+    </div>
+    <div class="form" v-if="form == true">
+        <form action="index.php" method="POST">
+            Имя
+            <input type="text" name="Firstname">
+            Фамилия
+            <input type="text" name="Secondname">
+            телефон
+            <input type="number" name="telephone">
+            < 14 <input type="radio" name="low"> 14-18<input type="radio" name="mid">  >18 <input type="radio" name="high">
+            <input type="checkbox" name="consent">Я согласен на обработку персональных данных в соответствии с условиями, указанными в  пользовательском соглашении
+            <input type="submit" value="Отправить" name="submit"> <input type="button" name="back" value="Отмена" v-on:click="form = false" >
+        </form>
+    </div>
+<!-- form end -->
 </div>
 <!-- main end -->

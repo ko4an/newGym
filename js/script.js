@@ -14,6 +14,7 @@ $(document).ready(function(){
 var demo = new Vue({
   el: '#main',
   data: {
-    usl: ''
+    usl: '',
+    form: false
   }
 })
